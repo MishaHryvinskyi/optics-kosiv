@@ -3,441 +3,445 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Оптичний центр. Дізнайтеся про наші послуги з виготовлення та ремонту окулярів, консультації офтальмолога, підбір контактних лінз та сонцезахисних окулярів.">
+    <meta name="description" content="Оптика Косів. Дізнайтеся про наші послуги з виготовлення та ремонту окулярів, консультації офтальмолога, підбір контактних лінз та сонцезахисних окулярів.">
     <title>Оптика Косів</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   <body>
-    <header>
-        <div class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__logo-wrapper">
-                        <a class="logo" href="./index.html">
-                            <img width="100" height="100" src="./images/logo.png" alt="logo">
-                        </a>
-                    </div>
-                    
-                    <button type="button" class="mobile-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="button menu">
-                        <svg width="30" height="30">
-                            <use href="./images/icons.svg#icon-menu"></use>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo-wrapper">
+                    <a class="logo" href="./index.html">
+                        <img width="100" height="100" src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+                
+                <button type="button" class="mobile-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="button menu">
+                    <svg width="30" height="30">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+    
+                <div class="menu-container js-menu-container">
+                    <button type="button" class="mobile-menu js-close-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="close button menu">
+                        <svg>
+                            <use href="./images/icons.svg#icon-char"></use>
                         </svg>
                     </button>
-        
-                    <div class="menu-container js-menu-container">
-                        <button type="button" class="mobile-menu js-close-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="close button menu">
-                            <svg>
-                                <use href="./images/icons.svg#icon-char"></use>
-                            </svg>
-                        </button>
-                        <div class="mobile-menu-wrapper">
-                            <ul class="header__mobile-list">
-                                <li class="header__mobile-item">
-                                    <a class="header__mobile-link" href="#services">Наші послуги</a>
-                                </li>
-                                <li class="header__mobile-item">
-                                    <a class="header__mobile-link" href="#about">Про нас</a>
-                                </li>
-                                <li class="header__mobile-item">
-                                    <a class="header__mobile-link" href="#contacts">Контакти</a>
-                                </li>
-                            </ul>
-                
-                            <ul class="header__social-items-mobile">
-                                <li class="header__social-item-mobile">
-                                    <a class="header__social-link" href="https://www.facebook.com/profile.php?id=61562324486714" target="_blank" aria-label="Facebook link">
-                                        <svg class="svg-mobile-menu" width="22" height="22">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="header__social-item-mobile">
-                                    <a class="footer__soc-link" href="https://www.instagram.com/kosiv.optika?igsh=MWI3ZWJydXFwejl5Mw==" rel="noreferrer noopener" target="_blank" aria-label="Instagram link">
-                                        <svg class="svg-mobile-menu" width="22" height="22">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="header__social-item-mobile">
-                                    <a class="footer__soc-link" href="viber://chat?number=+38097-126-52-58" rel="noreferrer noopener" target="_blank" aria-label="Viber link">
-                                        <svg class="svg-mobile-menu" width="22" height="22">
-                                            <use href="./images/icons.svg#icon-viber-icon"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                    <div class="header__menu">
-                        <nav class="header__navigation">
-                            <div>
-                                <ul class="header__navigation-list">
-                                    <li class="header__navigation-item">
-                                        <a href="#services">Наші послуги</a>
-                                    </li>
-                                    <li class="header__navigation-item">
-                                        <a href="#about">Про нас</a>
-                                    </li>
-                                    <li class="header__navigation-item">
-                                        <a href="#contacts">Контакти</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    
-                        <div class="header__social">
-                            <ul class="header__social-items">
-                                <li class="header__social-item">
-                                    <a class="header__social-link" href="https://www.facebook.com/profile.php?id=61562324486714" target="_blank" aria-label="Facebook link">
-                                        <svg class="header__svg" width="22" height="22">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="header__social-item">
-                                    <a class="footer__soc-link" href="https://www.instagram.com/kosiv.optika?igsh=MWI3ZWJydXFwejl5Mw==" rel="noreferrer noopener" target="_blank" aria-label="Instagram link">
-                                        <svg class="header__svg" width="22" height="22">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="header__social-item">
-                                    <a class="footer__soc-link" href="viber://chat?number=+38097-126-52-58" rel="noreferrer noopener" target="_blank" aria-label="Viber link">
-                                        <svg class="header__svg" width="22" height="22">
-                                            <use href="./images/icons.svg#icon-viber-icon"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                    <div class="container-theems">
-                        <label class="toggle" for="switch">
-                            <input id="switch" class="input" type="checkbox" aria-label="cheng theems">
-                            <div class="icon icon--moon">
-                                <svg height="32" width="32" viewBox="0 0 24 24">
-                                <use href="./images/icons.svg#icon-sun"></use>
-                                </svg>
-                            </div>
-                        
-                            <div class="icon icon--sun">
-                                <svg height="32" width="32" viewBox="0 0 24 24">
-                                    <use href="./images/icons.svg#icon-moon"></use>
-                                </svg>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </header>
-    
-    <main>
-      <!-- Hero -->
-      <section class="hero">
-        <div class="container">
-            <h1 class="hero__title">З турботою про ваш зір</h1>
-            <p class="hero__paragraph">Індивідуальний підхід та найкращі рішення для вашого зору</p>
-        </div>
-    </section>
-
-    <!-- Advantages -->
-    <div class="container">
-        <section class="section">
-            <div class="advantages">
-                <h2 class="visually-hidden">Наші переваги</h2>
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <div class="advantages__item-wrapper">
-                            <svg width="80" height="80">
-                                <use href="./images/icons.svg#icon-time"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages__title">Виготовлення та ремонт окулярів</h3>
-                        <p class="advantages__description">1-4 робочих дня</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantages__item-wrapper">
-                            <svg width="80" height="80">
-                                <use href="./images/icons.svg#icon-quality"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages__title">Тільки якісні матеріали</h3>
-                        <p class="advantages__description">Світових брендів (Італія, Франція, Литва)</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantages__item-wrapper">
-                            <svg width="80" height="80">
-                                <use href="./images/icons.svg#icon-customer-care"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages__title">Дбайливе ставлення до клієнтів</h3>
-                        <p class="advantages__description">Ми цінуємо кожного клієнта</p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantages__item-wrapper">
-                            <svg width="80" height="80">
-                                <use href="./images/icons.svg#icon-percent-50"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages__title">Знижки для учасників бойових дій</h3>
-                        <p class="advantages__description">Особливі пропозиції та знижки</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
-
-    <!-- Services -->
-    <section class="services section">
-        <div class="container">
-            <h2 class="title animate-list-left" id="services">Наші послуги</h2>
-            <ul class="services__list">
-                <li class="services__item">
-                    <img srcset="
-                        ./images/servisec/make-glasses-2x.jpg 2x,
-                        ./images/servisec/make-glasses-3x.jpg 3x,
-                        ./images/servisec/make-glasses-4x.jpg 4x
-                    " 
-                    width="330"
-                    class="services__img"
-                    src="./images/servisec/make-glasses-1x.jpg" 
-                    alt="make glasses">
-                    <h3 class="services__title">Виготовлення окуляр</h3>
-                </li>
-                <li class="services__item">
-                    <img srcset="
-                        ./images/servisec/repare-glasses-2x.jpg 2x,
-                        ./images/servisec/repare-glasses-3x.jpg 3x,
-                        ./images/servisec/repare-glasses-4x.jpg 4x
-                    " 
-                    width="330" 
-                    class="services__img" 
-                    src="./images/servisec/repare-glasses-1x.jpg" 
-                    alt="repare glasses">
-                    <h3 class="services__title">Ремонт окуляр</h3>
-                </li>
-                <li class="services__item">
-                    <img 
-                    srcset="
-                        ./images/servisec/sun-glasses-2x.jpg 2x,
-                        ./images/servisec/sun-glasses-3x.jpg 3x,
-                        ./images/servisec/sun-glasses-4x.jpg 4x
-                    "
-                    width="330" 
-                    class="services__img" 
-                    src="./images/servisec/sun-glasses-1x.jpg" 
-                    alt="sun glasses">
-                    <h3 class="services__title">Сонячні окуляри</h3>
-                </li>
-                <li class="services__item">
-                    <img 
-                    srcset="
-                        ./images/servisec/linses-2x.jpg 2x,
-                        ./images/servisec/linses-3x.jpg 3x,
-                        ./images/servisec/linses-4x.jpg 4x
-                    "
-                    width="330" 
-                    class="services__img" 
-                    src="./images/servisec/linses-1x.jpg" 
-                    alt="contact linses">
-                    <h3 class="services__title">Контактні лінзи</h3>
-                </li>
-                <li class="services__item">
-                    <img 
-                    srcset="
-                        ./images/servisec/accessory-2x.jpg 2x,
-                        ./images/servisec/accessory-3x.jpg 3x,
-                        ./images/servisec/accessory-4x.jpg 4x
-                    "
-                    width="330" 
-                    class="services__img" 
-                    src="./images/servisec/accessory-1x.jpg" 
-                    alt="doctor">
-                    <h3 class="services__title">Аксесуари</h3>
-                </li>
-                <li class="services__item">
-                    <img 
-                    srcset="
-                        ./images/servisec/doctor-2x.jpg 2x,
-                        ./images/servisec/doctor-3x.jpg 3x,
-                        ./images/servisec/doctor-4x.jpg 4x
-                    "
-                    width="330" 
-                    class="services__img" 
-                    src="./images/servisec/doctor-1x.jpg" 
-                    alt="doctor">
-                    <h3 class="services__title">Огляд офтальмолога</h3>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- About -->
-    <div class="about">
-        <div class="container">
-            <section class="section">
-                <h2 id="about" class="title animate-list-left">Про нас</h2>
-                <div class="about">
-                    <div class="about__paragraph-optica">
-                        <p class="about__paragraph">
-                            Ласкаво просимо до нашої оптики! Ми раді 
-                            вітати вас на нашому сайті та дякуємо за ваш 
-                            інтерес до нашої компанії.
-                            Наш пріоритет — ваше здоров'я та комфорт.
-                        </p>
-                        <ul class="about__items-optica">
-                            <li class="about__item-optica">
-                                <img 
-                                srcset="
-                                    ./images/about/optics-2x.jpg 2x,
-                                    ./images/about/optics-3x.jpg 3x,
-                                    ./images/about/optics-4x.jpg 4x
-                                "
-                                class="about__img-optica" 
-                                width="360" 
-                                src="./images/about/optics-1x.jpg" 
-                                alt="оптика фасад">
+                    <div class="mobile-menu-wrapper">
+                        <ul class="header__mobile-list">
+                            <li class="header__mobile-item">
+                                <a class="header__mobile-link" href="#services">Наші послуги</a>
                             </li>
-                            <li class="about__item-optica">
-                                <img 
-                                srcset="
-                                    ./images/about/optics-logo-2x.jpg 2x,
-                                    ./images/about/optics-logo-3x.jpg 3x,
-                                    ./images/about/optics-logo-4x.jpg 4x
-                                "
-                                class="about__img-optica" 
-                                width="360" 
-                                src="./images/about/optics-logo-1x.jpg" 
-                                alt="оптика вивіска">
+                            <li class="header__mobile-item">
+                                <a class="header__mobile-link" href="#about">Про нас</a>
                             </li>
-                            <li class="about__item-optica">
-                                <a class="footer__address-link" href="https://maps.app.goo.gl/fCpPjG5Xexu3PWMk8" rel="noreferrer noopener" target="_blank">
-                                    <img 
-                                srcset="
-                                    ./images/about/map-2x.jpg 2x,
-                                    ./images/about/map-3x.jpg 3x,
-                                    ./images/about/map-4x.jpg 4x
-                                "
-                                class="about__img-optica" 
-                                width="360" 
-                                src="./images/about/map-1x.jpg" 
-                                alt="оптика вхід">
+                            <li class="header__mobile-item">
+                                <a class="header__mobile-link" href="#contacts">Контакти</a>
+                            </li>
+                        </ul>
+            
+                        <ul class="header__social-items-mobile">
+                            <li class="header__social-item-mobile">
+                                <a class="header__social-link" href="https://www.facebook.com/profile.php?id=61562324486714" target="_blank" aria-label="Facebook link">
+                                    <svg class="svg-mobile-menu" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__social-item-mobile">
+                                <a class="footer__soc-link" href="https://www.instagram.com/kosiv.optika?igsh=MWI3ZWJydXFwejl5Mw==" rel="noreferrer noopener" target="_blank" aria-label="Instagram link">
+                                    <svg class="svg-mobile-menu" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__social-item-mobile">
+                                <a class="footer__soc-link" href="viber://chat?number=+38097-126-52-58" rel="noreferrer noopener" target="_blank" aria-label="Viber link">
+                                    <svg class="svg-mobile-menu" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-viber-icon"></use>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="about__paragraph-founder">
-                        <p class="about__paragraph">
-                            Ми - перша в Косівському районі Оптика, яку було відкрито 8.06 в 2006 році 
-                            Андрієм Тарасевичем, який мав бачення та прагнення допомогти місцевому населенню.
-                            З роками, Тараскін поступово розширював свою справу, постійно вдосконалюючи свої
-                            навички з виготовлення окулярів, впроваджував новітні технології та сучасні методи
-                            обслуговування клієнтів. 
-                            Завдяки його наполегливій праці та відданості, салон-магазин “Оптика” став відомим
-                            серед місцевих жителів за високу якість обслуговування та широкий вибір оптичної 
-                            продукції. 
-                            А відданість справі та уважне ставлення до кожного клієнта зробили Андрія відомим 
-                            та шанованим майстром у регіоні.
-                        </p>
-                        <p class="about__paragraph about__paragraph-space">
-                            Ми дбайливо продовжуємо справу засновника й забезпечуємо кожного клієнта 
-                            ідеально підібраними окулярами, що відповідають Вашим індивідуальним потребам!
-                        </p>
-                        <ul class="about__items-founder">
-                            <li class="about__founder-item">
-                                <img 
-                                class="about__founder-img"
-                                srcset="
-                                    ./images/about/founder-1-2x.jpg 2x,
-                                    ./images/about/founder-1-3x.jpg 3x,
-                                    ./images/about/founder-1-4x.jpg 4x
-                                " 
-                                width="380" 
-                                src="./images/about/founder-1-1x.jpg" 
-                                alt="оптика фасад">
+                </div>
+    
+                <div class="header__menu">
+                    <nav class="header__navigation">
+                        <div>
+                            <ul class="header__navigation-list">
+                                <li class="header__navigation-item">
+                                    <a href="#services">Наші послуги</a>
+                                </li>
+                                <li class="header__navigation-item">
+                                    <a href="#about">Про нас</a>
+                                </li>
+                                <li class="header__navigation-item">
+                                    <a href="#contacts">Контакти</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                
+                    <div class="header__social">
+                        <ul class="header__social-items">
+                            <li class="header__social-item">
+                                <a class="header__social-link" href="https://www.facebook.com/profile.php?id=61562324486714" target="_blank" aria-label="Facebook link">
+                                    <svg class="header__svg" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="about__founder-item">
-                                <img 
-                                class="about__founder-img"
-                                srcset="
-                                    ./images/about/founder-2-2x.jpg 2x,
-                                    ./images/about/founder-2-3x.jpg 3x,
-                                    ./images/about/founder-2-4x.jpg 4x
-                                " 
-                                width="320" 
-                                src="./images/about/founder-2-1x.jpg" 
-                                alt="оптика вивіска">
+                            <li class="header__social-item">
+                                <a class="footer__soc-link" href="https://www.instagram.com/kosiv.optika?igsh=MWI3ZWJydXFwejl5Mw==" rel="noreferrer noopener" target="_blank" aria-label="Instagram link">
+                                    <svg class="header__svg" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="about__founder-item">
-                                <img 
-                                class="about__founder-img"
-                                srcset="
-                                    ./images/about/founder-3-2x.jpg 2x,
-                                    ./images/about/founder-3-3x.jpg 3x,
-                                    ./images/about/founder-3-4x.jpg 4x
-                                " 
-                                width="380" 
-                                src="./images/about/founder-3-1x.jpg" 
-                                alt="оптика вхід">
+                            <li class="header__social-item">
+                                <a class="footer__soc-link" href="viber://chat?number=+38097-126-52-58" rel="noreferrer noopener" target="_blank" aria-label="Viber link">
+                                    <svg class="header__svg" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-viber-icon"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </section>
+    
+                <div class="container-theems">
+                    <label class="toggle" for="switch">
+                        <input id="switch" class="input" type="checkbox" aria-label="cheng theems">
+                        <div class="icon icon--moon">
+                            <svg height="32" width="32" viewBox="0 0 24 24">
+                            <use href="./images/icons.svg#icon-sun"></use>
+                            </svg>
+                        </div>
+                    
+                        <div class="icon icon--sun">
+                            <svg height="32" width="32" viewBox="0 0 24 24">
+                                <use href="./images/icons.svg#icon-moon"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- Ophthalmologist -->
-    <div class="ophthalmologist">
+    </header>
+    
+    <main>
+      <!-- Hero -->
+    <section class="hero">
         <div class="container">
-            <section class="section">
-                <h2 class="ophthalmologist__title title animate-list-left">Прийом у лікаря-офтальмолога</h2>
-                <div class="ophthalmologist__paragraph">
-                    <div class="ophthalmologist__items">
+            <div class="hero__wrapper">
+                <h1 class="hero__title">З турботою про ваш зір</h1>
+                <p class="hero__paragraph">
+                    Індивідуальний підхід та найкращі рішення для вашого зору
+                </p>
+            </div>
+            <a class="button" href="tel:+38097-126-52-58">
+                Подзвонити 
+                <svg class="hero__svg">
+                    <use width="22" height="22" href="./images/icons.svg#icon-phone"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="section container advantages">
+        <h2 class="visually-hidden">Наші переваги</h2>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <div class="advantages__item-wrapper">
+                        <svg width="80" height="80">
+                            <use href="./images/icons.svg#icon-time"></use>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__title">Виготовлення та ремонт окулярів</h3>
+                    <p class="advantages__description">1-4 робочих дня</p>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-wrapper">
+                        <svg width="80" height="80">
+                            <use href="./images/icons.svg#icon-quality"></use>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__title">Тільки якісні матеріали</h3>
+                    <p class="advantages__description">Світових брендів (Італія, Франція, Литва)</p>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-wrapper">
+                        <svg width="80" height="80">
+                            <use href="./images/icons.svg#icon-customer-care"></use>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__title">Дбайливе ставлення до клієнтів</h3>
+                    <p class="advantages__description">Ми цінуємо кожного клієнта</p>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-wrapper">
+                        <svg width="80" height="80">
+                            <use href="./images/icons.svg#icon-percent-50"></use>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__title">Знижки для учасників бойових дій</h3>
+                    <p class="advantages__description">Особливі пропозиції та знижки</p>
+                </li>
+            </ul>
+    </section>
+
+    <!-- Services -->
+    <section class="services container section">
+        <h2 class="title animate-list-left" id="services">Наші послуги</h2>
+        <ul class="services__list">
+            <li class="services__item">
+                <img srcset="
+                    ./images/servisec/make-glasses-2x.jpg 2x,
+                    ./images/servisec/make-glasses-3x.jpg 3x,
+                    ./images/servisec/make-glasses-4x.jpg 4x
+                " 
+                width="330"
+                class="services__img"
+                src="./images/servisec/make-glasses-1x.jpg" 
+                alt="make glasses">
+                <h3 class="services__title">Виготовлення окуляр</h3>
+            </li>
+            <li class="services__item">
+                <img srcset="
+                    ./images/servisec/repare-glasses-2x.jpg 2x,
+                    ./images/servisec/repare-glasses-3x.jpg 3x,
+                    ./images/servisec/repare-glasses-4x.jpg 4x
+                " 
+                width="330" 
+                class="services__img" 
+                src="./images/servisec/repare-glasses-1x.jpg" 
+                alt="repare glasses">
+                <h3 class="services__title">Ремонт окуляр</h3>
+            </li>
+            <li class="services__item">
+                <img 
+                srcset="
+                    ./images/servisec/sun-glasses-2x.jpg 2x,
+                    ./images/servisec/sun-glasses-3x.jpg 3x,
+                    ./images/servisec/sun-glasses-4x.jpg 4x
+                "
+                width="330" 
+                class="services__img" 
+                src="./images/servisec/sun-glasses-1x.jpg" 
+                alt="sun glasses">
+                <h3 class="services__title">Сонячні окуляри</h3>
+            </li>
+            <li class="services__item">
+                <img 
+                srcset="
+                    ./images/servisec/linses-2x.jpg 2x,
+                    ./images/servisec/linses-3x.jpg 3x,
+                    ./images/servisec/linses-4x.jpg 4x
+                "
+                width="330" 
+                class="services__img" 
+                src="./images/servisec/linses-1x.jpg" 
+                alt="contact linses">
+                <h3 class="services__title">Контактні лінзи</h3>
+            </li>
+            <li class="services__item">
+                <img 
+                srcset="
+                    ./images/servisec/accessory-2x.jpg 2x,
+                    ./images/servisec/accessory-3x.jpg 3x,
+                    ./images/servisec/accessory-4x.jpg 4x
+                "
+                width="330" 
+                class="services__img" 
+                src="./images/servisec/accessory-1x.jpg" 
+                alt="doctor">
+                <h3 class="services__title">Аксесуари</h3>
+            </li>
+            <li class="services__item">
+                <img 
+                srcset="
+                    ./images/servisec/doctor-2x.jpg 2x,
+                    ./images/servisec/doctor-3x.jpg 3x,
+                    ./images/servisec/doctor-4x.jpg 4x
+                "
+                width="330" 
+                class="services__img" 
+                src="./images/servisec/doctor-1x.jpg" 
+                alt="doctor">
+                <h3 class="services__title">Огляд офтальмолога</h3>
+            </li>
+        </ul>
+    </section>
+
+    <!-- About -->
+    <section class="section container about">
+        <h2 id="about" class="title animate-list-left">Про нас</h2>
+        <div class="about">
+            <div class="about__paragraph-optica">
+                <ul class="about__items-optica">
+                    <li class="about__item-optica">
                         <img 
                         srcset="
-                            ./images/about/doctor-2x.jpg 2x,
-                            ./images/about/doctor-3x.jpg 3x,
-                            ./images/about/doctor-4x.jpg 4x
+                            ./images/about/optics-2x.jpg 2x,
+                            ./images/about/optics-3x.jpg 3x,
+                            ./images/about/optics-4x.jpg 4x
                         "
-                        class="ophthalmologist__img" 
-                        width="280" 
-                        src="./images//about/doctor.jpg" 
-                        alt="Наш офтальмолог">
-                    </div>
-                    <div>
-                        <p class="ophthalmologist__description">
-                            У нашій оптиці веде прийом лікар Антоневич
-                            Ліля Іванівна — висококваліфікований 
-                            спеціаліст з багаторічним досвідом роботи.
-                            Ліля Іванівна відома своїм професійним 
-                            підходом, уважністю до кожного пацієнта та 
-                            прагненням забезпечити найкращі результати 
-                            в діагностиці та лікуванні зорових проблем.
-                        </p>
-                        <p class="ophthalmologist__description">
-                            Ліля Іванівна веде прийом щочетверга о 16:00. 
-                            Під час консультації ви зможете отримати професійний
-                            огляд, діагностику зору та рекомендації щодо 
-                            подальшого лікування.
-                        </p>
-                    </div>
-                </div>
-                <p class="ophthalmologist__description ophthalmologist__description-last">
-                    З турботою про Ваш зір!
+                        class="about__img-optica" 
+                        width="360"
+                        height="267" 
+                        src="./images/about/optics-1x.jpg" 
+                        alt="оптика фасад">
+                    </li>
+                    <li class="about__item-optica">
+                        <img 
+                        srcset="
+                            ./images/about/optics-logo-2x.jpg 2x,
+                            ./images/about/optics-logo-3x.jpg 3x,
+                            ./images/about/optics-logo-4x.jpg 4x
+                        "
+                        class="about__img-optica" 
+                        width="360"
+                        height="267" 
+                        src="./images/about/optics-logo-1x.jpg" 
+                        alt="оптика вивіска">
+                    </li>
+                    <li class="about__item-optica">
+                        <a class="footer__address-link" href="https://maps.app.goo.gl/fCpPjG5Xexu3PWMk8" rel="noreferrer noopener" target="_blank">
+                            <img 
+                        srcset="
+                            ./images/about/map-2x.jpg 2x,
+                            ./images/about/map-3x.jpg 3x,
+                            ./images/about/map-4x.jpg 4x
+                        "
+                        class="about__img-optica" 
+                        width="360"
+                        height="267" 
+                        src="./images/about/map-1x.jpg" 
+                        alt="оптика вхід">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="about__paragraph-founder">
+                <p class="about__paragraph">
+                    Радо вітаємо Вас на нашому сайті! Дякуємо за 
+                    інтерес та довіру до команди салону-магазину "Оптика", що знаходиться в самому центрі міста
+                    Наш пріоритет — ваше здоров'я та комфорт.
+                    Ми - перша в Косівському районі Оптика, яку було відкрито в 2006 році 8 червня  
+                    Андрієм Тарасевичем, який мав бачення та прагнення допомогти місцевому населенню.
+                    З роками, Тараскін поступово розширював свою справу, постійно вдосконалюючи власні
+                    навички з виготовлення окулярів, впроваджував новітні технології та сучасні методи
+                    обслуговування клієнтів. 
+                    Завдяки його наполегливій праці та відданості, салон-магазин “Оптика” став відомим
+                    серед місцевих жителів за високу якість обслуговування та широкий вибір оптичної 
+                    продукції. 
+                    А відданість справі та уважне ставлення до кожного клієнта зробили Андрія відомим 
+                    та шанованим майстром у регіоні.
+            
+                    Ми дбайливо продовжуємо справу засновника й забезпечуємо кожного клієнта 
+                    ідеально підібраними окулярами, що відповідають Вашим індивідуальним потребам!
                 </p>
-            </section>
+                <ul class="about__items-founder">
+                    <li class="about__founder-item">
+                        <img 
+                        class="about__founder-img"
+                        srcset="
+                            ./images/about/founder-1-2x.jpg 2x,
+                            ./images/about/founder-1-3x.jpg 3x,
+                            ./images/about/founder-1-4x.jpg 4x
+                        " 
+                        width="380" 
+                        src="./images/about/founder-1-1x.jpg" 
+                        alt="оптика фасад">
+                    </li>
+                    <li class="about__founder-item">
+                        <img 
+                        class="about__founder-img"
+                        srcset="
+                            ./images/about/founder-2-2x.jpg 2x,
+                            ./images/about/founder-2-3x.jpg 3x,
+                            ./images/about/founder-2-4x.jpg 4x
+                        " 
+                        width="320" 
+                        src="./images/about/founder-2-1x.jpg" 
+                        alt="оптика вивіска">
+                    </li>
+                    <li class="about__founder-item">
+                        <img 
+                        class="about__founder-img"
+                        srcset="
+                            ./images/about/founder-3-2x.jpg 2x,
+                            ./images/about/founder-3-3x.jpg 3x,
+                            ./images/about/founder-3-4x.jpg 4x
+                        " 
+                        width="380" 
+                        src="./images/about/founder-3-1x.jpg" 
+                        alt="оптика вхід">
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Ophthalmologist -->
+    <section class="ophthalmologist container section">
+        <h2 class="ophthalmologist__title title animate-list-left">Запрошуємо на прийом до лікаря-офтальмолога</h2>
+        <div class="ophthalmologist__paragraph">
+            <div class="ophthalmologist__items">
+                <img 
+                srcset="
+                    ./images/about/doctor-2x.jpg 2x,
+                    ./images/about/doctor-3x.jpg 3x,
+                    ./images/about/doctor-4x.jpg 4x
+                "
+                class="ophthalmologist__img" 
+                width="280" 
+                src="./images//about/doctor.jpg" 
+                alt="Наш офтальмолог">
+            </div>
+            <div>
+                <p class="ophthalmologist__description paragraph-space">
+                    У нашій центральній Оптиці веде прийом <strong>Антоневич
+                    Ліля Іванівна — лікар-офтальмолог ВИЩОЇ категорії з 30-річним стажем роботи.</strong>
+                    
+                    Ліля Іванівна відома своїм професійним 
+                    підходом, уважністю до кожного пацієнта та 
+                    прагненням забезпечити найкращі результати 
+                    в діагностиці та лікуванні зорових проблем. 
+                </p>
+                <div class="ophthalmologist__description-wrapper">
+                    <p class="ophthalmologist__description">
+                        Лікар приймає щочетверга о 16:00. Вартість 150грн.
+                    </p>
+                    <p class="ophthalmologist__description">У вартість консультації фходить:</p>
+                        <ul class="ophthalmologist__list">
+                            <li><p class="ophthalmologist__description">- професійний огляд лікаря-офтальмолога</p></li>
+                            <li><p class="ophthalmologist__description">- комп'ютерна діагносика зору</p></li>
+                            <li><p class="ophthalmologist__description">- підбір рецептури для окуляр</p></li>
+                            <li><p class="ophthalmologist__description">- рекомендації щодо подальшого лікування</p></li>
+                        </ul>
+                        <p class="ophthalmologist__description">Гарантуємо професійність та дбайливе ставлення.</p>
+                </div>
+                
+            </div>
+        </div>
+        <p class="ophthalmologist__description ophthalmologist__description-last">
+            З турботою про Ваш зір!
+        </p>
+    </section>
     </main>
-    <footer>
-        <div class="footer" id="contacts">
+
+    <!-- footer -->
+    <footer class="footer" id="contacts">
             <div class="container">
                 <div class="footer__wrapper">
                     <div class="footer__wrap">   
@@ -492,48 +496,107 @@
                             </ul>
                         </nav>
                     </div>
-                    <ul class="footer__soc-list">
-                        <li class="footer__soc-item">
-                            <a class="footer__soc-link" href="https://www.facebook.com/profile.php?id=61562324486714" target="_blank" aria-label="Facebook link">
-                                <svg class="footer__svg" width="22" height="22">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__soc-item">
-                            <a class="footer__soc-link" href="https://www.instagram.com/kosiv.optika?igsh=MWI3ZWJydXFwejl5Mw==" rel="noreferrer noopener" target="_blank" aria-label="Instagram link">
-                                <svg class="footer__svg" width="22" height="22">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__soc-item">
-                            <a class="footer__soc-link" href="viber://chat?number=+38097-126-52-58" rel="noreferrer noopener" target="_blank" aria-label="Viber link">
-                                <svg class="footer__svg" width="22" height="22">
-                                    <use href="./images/icons.svg#icon-viber-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="footer__soc-wrapper">
+                        <ul class="footer__soc-list">
+                            <li class="footer__soc-item">
+                                <a class="footer__soc-link" href="https://www.facebook.com/profile.php?id=61562324486714" target="_blank" aria-label="Facebook link">
+                                    <svg class="footer__svg" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__soc-item">
+                                <a class="footer__soc-link" href="https://www.instagram.com/kosiv.optika?igsh=MWI3ZWJydXFwejl5Mw==" rel="noreferrer noopener" target="_blank" aria-label="Instagram link">
+                                    <svg class="footer__svg" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__soc-item">
+                                <a class="footer__soc-link" href="viber://chat?number=+38097-126-52-58" rel="noreferrer noopener" target="_blank" aria-label="Viber link">
+                                    <svg class="footer__svg" width="22" height="22">
+                                        <use href="./images/icons.svg#icon-viber-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="footer__hour">Працюємо Пн-Пт з 9:30 до 15:00</p>
+                        <p class="footer__hour">Сб з 9:30 до 13:00</p>
+                        <p class="footer__hour">Неділя вихідний</p>
+                    </div>
                 </div>
-                <p class="footer__rights">&copy;2023 Оптика Косів. All Rights Reserved</p>
+                <p class="footer__rights">&copy;2024 Оптика Косів. Усі права захищено</p>
             </div>
-        </div>
     </footer>
+
+    <!-- backdrop and modal -->
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <div class="swiper gallery__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img width="412" height="581" class="gallery__images" src="./images/modal/foto1.jpg" alt="news1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img width="412" height="581" class="gallery__images" src="./images/modal/foto2.jpg" alt="news2">
+                  </div>
+                </div>
+              </div>
+              <button class="modal-btn" type="button" aria-label="modal-close">
+                <svg class="modal-btn-svg">
+                  <use href="./images/icons.svg#icon-char"></use>
+                </svg>
+              </button>
+        </div>
+    </div>
+
+    <!-- button go-to-top -->
     <button type="button" class="go-to-top" aria-label="button go to top">
       <svg width="20" height="20">
         <use href="./images/icons.svg#icon-arrow-up2"></use>
       </svg>
     </button>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- scripts -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const gallerySwiper = new Swiper(".gallery__slider", {
+            navigation: {
+            nextEl: ".gallery__button-next",
+            prevEl: ".gallery__button-prev",
+            },
+            centeredSlides: false,
+            initialSlide: 0,
+            loop: true,
+            loopedSlides: 3,
+            spaceBetween: 16,
+
+            breakpoints: {
+            1440: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            },
+
+            keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+            },
+
+            autoplay: {
+            delay: 5000,
+            },
+
+            speed: 1000,
+
+        });
+    </script>
     <script type="module" src="./js/theeme.js"></script>
     <script type="module" src="./js/go-to-top.js"></script>
     <script type="module" src="./js/mobile-menu.js"></script>
     <script type="module" src="./js/animation-title.js"></script>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
