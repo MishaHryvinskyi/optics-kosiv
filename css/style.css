@@ -16,7 +16,6 @@
     --primary-font: "Wix Madefor Display";
     --title-font: "Cormorant Infant";
 }
-
 /* ================================================================  Reset ================================================================ */
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -41,7 +40,6 @@ ul, ol {
     margin: 0;
     list-style: none;
 }
-
 /* ================================================================  Base ================================================================ */
 body.light {
   --color-bg: var(--color-white);
@@ -76,7 +74,6 @@ body {
   font: normal 300 16px var(--primary-font), sans-serif;
   letter-spacing: 1px;
 }
-
 /* ===========================================================  button =========================================================== */
 .button {
     padding: 20px 30px;
@@ -110,7 +107,6 @@ body {
     text-shadow: 0 0 5px var(--color-white), 0 0 10px var(--color-white), 0 0 20px var(--color-white);
     box-shadow: var(--accent-shadow);
   }
-
 /* ===========================================================  container-theems =========================================================== */
 .toggle {
     width: 45px;
@@ -179,7 +175,6 @@ body {
       margin-left: auto;
     }
 }
-
 /* ===========================================================  container =========================================================== */
 @media screen and (min-width:320px) and (max-width:480px) {
     .container {
@@ -201,7 +196,6 @@ body {
         width: 1200px;
     }
 }
-
 /* ===========================================================  go-to-top-btn =========================================================== */
 .go-to-top {
     position: fixed;
@@ -234,7 +228,6 @@ body {
 .go-to-top:hover > svg {
     fill: var(--accent-color);
 }
-
 /* ==================================================================  logo ================================================================== */
 .logo {
     display: flex;
@@ -258,7 +251,6 @@ body {
 .logo > span {
     color: var(--accent-color-dark);
 }
-
 /* ===============================================================  mobile-menu =============================================================== */
 .mobile-menu {
     width: 45px;
@@ -372,12 +364,40 @@ body {
     fill: var(--color-white);
     transition: var(--time) var(--cubic);
 }
-
 /* ===============================================================  section =============================================================== */
 .section {
     padding-top: 96px;
 }
+/* =============================================================== social-items =============================================================== */
+.social-item {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border: solid currentColor 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--time) var(--cubic);
+    
+    &:hover {
+        box-shadow: var(--accent-shadow);
+        border: var(--accent-color) solid 2px;
+        fill: var(--accent-color);
+        transition: var(--time) var(--cubic); 
+    }
 
+    &:hover .social-item__svg {
+        transition: var(--time) var(--cubic); 
+        fill: var(--accent-color);
+    }
+}
+
+.social-item__svg {
+    display: flex;
+    transition: var(--time) var(--cubic); 
+    fill: currentColor;
+}
 /* =============================================================== swiper =============================================================== */
 .swiper {
     width: 100%;
@@ -397,7 +417,6 @@ body {
     object-fit: cover;
     border-radius: 12px;
 }
-
 /* ===============================================================  title =============================================================== */
 .title {
     text-align: center;
@@ -410,7 +429,6 @@ body {
         font-size: 38px;
     }
 }
-
 /* ===============================================================  heder =============================================================== */
 .header {
     padding: 10px 0;
@@ -496,35 +514,6 @@ body {
     margin-right: 14px;
 }
 
-.header__social-item {
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    border: solid currentColor 2px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--time) var(--cubic);
-}
-
-.header__social-item:hover {
-    box-shadow: var(--accent-shadow);
-    border: var(--accent-color) solid 2px;
-    fill: var(--accent-color);
-    transition: var(--time) var(--cubic); 
-}
-
-.header__social-item:hover .header__svg {
-    transition: var(--time) var(--cubic); 
-    fill: var(--accent-color);
-}
-
-.header__svg {
-    transition: var(--time) var(--cubic); 
-    fill: currentColor;
-}
-
 @media screen and (max-width:767px) {
     .header__menu {
         display: none;
@@ -563,7 +552,6 @@ body {
         margin-right: 120px;
     }
 }
-
 /* ===============================================================  hero =============================================================== */
 .hero__title {
     text-align: center;
@@ -756,7 +744,6 @@ body {
     width: 25px;
     height: 25px;
 }
-
 /* ===============================================================  advantages =============================================================== */
 .visually-hidden { 
     position: absolute;
@@ -815,7 +802,6 @@ body {
         margin-bottom: 60px;
     }
 }
-
 /* =============================================================== services =============================================================== */
 .services__list {
     display: flex;
@@ -936,7 +922,6 @@ body {
     background-color: rgba(128, 128, 128, 0.9);
     text-align: center;
 }
-
 /* =============================================================== about =============================================================== */
 .about__paragraph {
     font-size: 24px;
@@ -1078,7 +1063,6 @@ body {
         width: auto;
     }
 }
-
 /* =============================================================== ophthalmologist =============================================================== */
 .ophthalmologist__paragraph {
     display: flex;
@@ -1194,7 +1178,6 @@ body {
         width: 350px;
     }
 }
-
 /* =============================================================== footer =============================================================== */
 .footer {
     padding-top: 60px;
@@ -1215,51 +1198,15 @@ body {
 .footer__soc-list {
     display: flex;
     margin-bottom: 10px;
-
-    & li:not(:last-child) {
-        margin-right: 14px;
-    }
 }
 
-.footer__soc-item {
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    border: solid currentColor 2px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--time) var(--cubic);
-}
-
-.footer__soc-item:hover {
-    box-shadow: var(--accent-shadow);
-    border: var(--accent-color) solid 2px;
-    fill: var(--accent-color);
-    transition: var(--time) var(--cubic); 
-}
-
-.footer__soc-item:hover .footer__svg {
-    fill:var(--accent-color);
-}
-
-.footer__soc-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--time) var(--cubic);
-}
-
-.footer__svg {
-    transition: var(--time) var(--cubic);
-    fill: currentColor;
+.footer__soc-list li:not(:last-child) {
+    margin-right: 14px;
 }
 
 .footer__address-wrapper {
     margin-top: 40px;
 }
-
 
 .footer__navigation-link {
     padding: 14px;
@@ -1394,9 +1341,7 @@ body {
         margin-bottom: 20px;
     }
 }
-
 /* =============================================================== modal =============================================================== */
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -1436,7 +1381,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 425px) and (max-width: 480px) {
+  @media screen and (min-width: 425px) and (max-width: 1024px) {
     .modal {
       padding: 30px;
       height: auto;
