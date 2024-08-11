@@ -92,13 +92,6 @@ body {
     border: 1px solid var(--color-white);
     transition: 0.5s ease;
   }
-
-  @media screen and (min-width:320px) and (max-width:480px) {
-    .button {
-        width: auto;
-        justify-content: center;
-    }
-  }
   
   .button:hover {
     color: var(--color-white);
@@ -168,33 +161,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width:320px) and (max-width:767px) {
-    .container-theems {
-      margin-left: auto;
-    }
-}
-/* ===========================================================  container =========================================================== */
-@media screen and (min-width:320px) and (max-width:480px) {
-    .container {
-        padding: 0 15px;
-    }    
-}
-
-@media screen and (min-width:768px) {
-    .container {
-        padding: 0 32px;
-        margin: 0 auto;
-    }
-}
-
- @media screen and (min-width:1200px) {
-    .container {
-        padding: 0 32px;
-        margin: 0 auto;
-        width: 1200px;
-    }
 }
 /* ===========================================================  go-to-top-btn =========================================================== */
 .go-to-top {
@@ -284,12 +250,6 @@ body {
     transition: var(--time) var(--cubic);
 }
 
-@media screen and (min-width:768px) {
-   .mobile-menu {
-        display: none;
-   }
-}
-
 .menu-container {
     position: fixed;
     top: 0;
@@ -299,7 +259,6 @@ body {
     padding: 32px;
     background-color: var(--primary-color);
     z-index: 999;
-
     transform: translateX(100%);
     transition: transform var(--time) ease-in-out;
 }
@@ -364,10 +323,6 @@ body {
     fill: var(--color-white);
     transition: var(--time) var(--cubic);
 }
-/* ===============================================================  section =============================================================== */
-.section {
-    padding-top: 96px;
-}
 /* =============================================================== social-items =============================================================== */
 .social-item {
     cursor: pointer;
@@ -379,18 +334,18 @@ body {
     align-items: center;
     justify-content: center;
     transition: var(--time) var(--cubic);
-    
-    &:hover {
-        box-shadow: var(--accent-shadow);
-        border: var(--accent-color) solid 2px;
-        fill: var(--accent-color);
-        transition: var(--time) var(--cubic); 
-    }
+}
 
-    &:hover .social-item__svg {
-        transition: var(--time) var(--cubic); 
-        fill: var(--accent-color);
-    }
+.social-item:hover {
+    box-shadow: var(--accent-shadow);
+    border: var(--accent-color) solid 2px;
+    fill: var(--accent-color);
+    transition: var(--time) var(--cubic); 
+}
+
+.social-item:hover .social-item__svg {
+    transition: var(--time) var(--cubic); 
+    fill: var(--accent-color);
 }
 
 .social-item__svg {
@@ -422,12 +377,6 @@ body {
     text-align: center;
     margin-bottom: 40px;
     font: 800 58px var(--title-font), serif;
-}
-
-@media screen and (min-width:320px) and (max-width:767px) {
-    .title {
-        font-size: 38px;
-    }
 }
 /* ===============================================================  heder =============================================================== */
 .header {
@@ -513,45 +462,6 @@ body {
 .header__social-items li:not(:last-child) {
     margin-right: 14px;
 }
-
-@media screen and (max-width:767px) {
-    .header__menu {
-        display: none;
-    }
-}
-
-@media screen and (min-width:320px) and (max-width:767px) {
-    .header__wrapper {
-        min-width: 290px;
-        display: flex;
-        align-items: center;
-    }    
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .header__menu {
-        margin-left: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header__navigation {
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .header__menu {
-        margin-left: auto;
-        display: flex;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .header__navigation {
-        margin-right: 120px;
-    }
-}
 /* ===============================================================  hero =============================================================== */
 .hero__title {
     text-align: center;
@@ -574,168 +484,6 @@ body {
     border-radius: 30px;
     border-top: solid 1px var(--color-white);
     border-bottom: solid 1px var(--color-white);
-}
-
-@media screen and (min-width:320px) {
-    .hero {
-        min-width: 320px;
-        background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-        rgba(34, 34, 39, 0.4)), url(../images/hero/hero-mobile.jpg);
-        background-size: cover;
-        background-position: center;
-        padding: 200px 0;
-    }
-
-    @media screen and (min-device-pixel-rato: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-mobile-2x.jpg);
-        }
-    }
-
-    @media screen and (min-device-pixel-rato: 3),
-    (-webkit-min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-mobile-3x.jpg);
-        }
-    }
-
-    @media screen and (min-device-pixel-rato: 4),
-    (-webkit-min-device-pixel-ratio: 4),
-    screen and (min-resolution: 384dpi),
-    screen and (min-resolution: 4dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-mobile-4x.jpg);
-        }
-    }
-
-} 
-    
-@media screen and (min-width:320px) and (max-width:767px) {
-    .hero {
-        min-width: 320px;
-    }
-
-    .hero__title {
-        font-size: 38px;
-        margin: 25px 0;
-    }
-
-    .hero__paragraph {
-        width: 280px;    
-        margin: 0 auto;
-    }
-    
-}
-
-@media screen and (min-width:768px) {
-    .hero__title {
-        font-size: 72px;
-        margin: 30px 0;
-    }
-
-    .hero__paragraph {
-        width: 600px;    
-        font-size: 24px;
-    }
-
-
-    .hero {
-        min-width: 768px;
-        background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-        rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet.jpg);
-        background-size: cover;
-        background-position: center;
-        padding: 300px 0;
-    }
-
-    @media screen and (min-device-pixel-rato: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet-2x.jpg);
-        }
-    }
-
-    @media screen and (min-device-pixel-rato: 3),
-    (-webkit-min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet-3x.jpg);
-        }
-    }
-
-    @media screen and (min-device-pixel-rato: 4),
-    (-webkit-min-device-pixel-ratio: 4),
-    screen and (min-resolution: 384dpi),
-    screen and (min-resolution: 4dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet-4x.jpg);
-        }
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .hero {
-        min-width: 1200px;
-        background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-        rgba(34, 34, 39, 0.4)), url(../images/hero/hero-bg.jpg);
-        background-size: cover;
-        background-position: center;
-        padding: 500px 0;
-    }
-
-    @media screen and (min-device-pixel-rato: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-bg-2x.jpg);
-        }
-    }
-
-    @media screen and (min-device-pixel-rato: 3),
-    (-webkit-min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-bg-3x.jpg);
-        }
-    }
-
-    @media screen and (min-device-pixel-rato: 4),
-    (-webkit-min-device-pixel-ratio: 4),
-    screen and (min-resolution: 384dpi),
-    screen and (min-resolution: 4dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
-            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-bg-4x.jpg);
-        }
-    }
-
-    .hero__title {
-        font-size: 92px;
-        margin: 30px 0;
-    }
-
-    .hero__paragraph {
-        margin: 0 auto;
-        width: 800px;    
-    }
 }
 
 .hero__svg {
@@ -790,18 +538,6 @@ body {
 .advantages__title {
     margin-bottom: 20px;
 }
-
-@media screen and (min-width:320px) and (max-width:767px) {
-    .advantages__list {
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-    }
-
-    .advantages__list li:not(:last-child) {
-        margin-bottom: 60px;
-    }
-}
 /* =============================================================== services =============================================================== */
 .services__list {
     display: flex;
@@ -810,22 +546,6 @@ body {
     justify-content: center;
     margin: 0 auto;
     margin: -10px;
-}
-
-@media screen and (min-width:1024px) and (max-width:1200px) {
-    .services__list {
-        width: 960px;
-        margin: 0;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .services__list {
-        width: 1136px;
-        margin: 0;
-        justify-content: space-between;
-    }
 }
 
 .services__item {
@@ -841,72 +561,6 @@ body {
     object-fit: contain;
     border-radius: 8px;
     display: block;
-}
-
-@media screen and (min-width:320px) and (max-width:375px) {
-    .services__item {
-        width: 280px;
-    }
-
-    .services__img {
-        width: 280px;
-    }
-}
-
-@media screen and (min-width:375px) and (max-width:480px) {
-    .services__item {
-        width: 345px;
-    }
-
-    .services__img {
-        width: 345px;
-    }
-}
-
-@media screen and (min-width:480px) and (max-width:767px) {
-    .services__item {
-        width: 450px;
-    }
-
-    .services__img {
-        width: 450px;
-    }
-}
-
-@media screen and (min-width:320px) and (max-width:767px) {
-    .services__item {
-        height: auto;
-    }
-}
-
-@media screen and (min-width:1024px) and (max-width:1200px) {
-    .services__item {
-        margin: 0;
-        width: 300px;
-    }
-
-    .services__item:nth-child(-n+3) {
-        margin-bottom: 30px;
-    }
-
-    .services__img {
-        width: 300px;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .services__item {
-        margin: 0;
-        width: 350px;
-    }
-
-    .services__item:nth-child(-n+3) {
-        margin-bottom: 40px;
-    }
-
-    .services__img {
-        width: 350px;
-    }
 }
 
 .services__title {
@@ -952,58 +606,6 @@ body {
     margin-top: 0;
 }
 
-@media screen and (min-width:320px) and (max-width:767px) {
-    .about__paragraph {
-        font-size: 20px;
-        text-align: center;
-        text-align: start;
-    }
-
-    .about__items-optica,
-    .about__items-founder {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .about__items-founder li:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    .about__items-optica li:not(:last-child) {
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .about__items-optica,
-    .about__items-founder {
-        width: 704px;
-        justify-content: space-between;
-    }
-
-    .about__founder-img {
-        height: 285px;
-        object-fit: cover;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .about__items-optica,
-    .about__items-founder {
-        width: 960px;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .about__items-optica,
-    .about__items-founder {
-        width: 1136px;
-        justify-content: space-between;
-    }
-}
-
 .about__items-founder {
     margin-bottom: 0;
 }
@@ -1013,55 +615,6 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 10px;
-}
-
-@media screen and (min-width:320px) and (max-width:375px) {
-    .about__img-optica,
-    .about__founder-img {
-        width: 280px;
-    }
-}
-
-@media screen and (min-width:375px) and (max-width:480px) {
-    .about__img-optica,
-    .about__founder-img {
-        width: 345px;
-    }
-}
-
-@media screen and (min-width:480px) and (max-width:767px) {
-    .about__img-optica,
-    .about__founder-img {
-        width: 450px;
-    }
-}
-
-@media screen and (min-width:320px) and (max-width:767px) {
-    .about__img-optica,
-    .about__founder-img {
-        height: auto;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .about__img-optica,
-    .about__founder-img {
-        width: 220px;
-    }
-}
-
-@media screen and (min-width:1024px) and (max-width:1200px) {
-    .about__img-optica,
-    .about__founder-img {
-        width: 300px;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .about__img-optica,
-    .about__founder-img {
-        width: auto;
-    }
 }
 /* =============================================================== ophthalmologist =============================================================== */
 .ophthalmologist__paragraph {
@@ -1075,53 +628,6 @@ body {
 .ophthalmologist__description {
     font-size: 24px;
     text-align: center;
-}
-
-@media screen and (min-width:320px) and (max-width:767px) {
-    .ophthalmologist__description {
-        font-size: 20px;
-        text-align: start;
-    }
-    .ophthalmologist__paragraph {
-        flex-direction: column;
-    }
-
-    .ophthalmologist__items {
-        margin-bottom: 40px;
-    }
-
-    .ophthalmologist__img {
-        height: auto;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1024px) {
-    .ophthalmologist__items {
-       margin-bottom: auto;
-    }
-
-}
-
-@media screen and (min-width:768px) {
-    .ophthalmologist__paragraph {
-        flex-direction: row;    
-    }
-
-    .ophthalmologist__items {
-        margin-right: 40px;
-    }
-
-    .ophthalmologist__description {
-        text-align: start;
-    }
-}
-
-.ophthalmologist__description-last {
-    text-align: center;
-    font-family: var(--title-font);
-    font-size: 48px;
-    font-weight: 900;
-    margin-bottom: 40px;
 }
 
 .ophthalmologist__list {
@@ -1141,42 +647,6 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 10px;
-}
-
-@media screen and (min-width:320px) and (max-width:375px) {
-    .ophthalmologist__img {
-        width: 280px;
-    }
-}
-
-@media screen and (min-width:375px) and (max-width:480px) {
-    .ophthalmologist__img {
-        width: 345px;
-    }
-}
-
-@media screen and (min-width:480px) and (max-width:767px) {
-    .ophthalmologist__img {
-        width: 450px;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .ophthalmologist__img {
-        width: 220px;
-    }
-}
-
-@media screen and (min-width:1024px) and (max-width:1200px) {
-    .ophthalmologist__img {
-        width: 360px;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .ophthalmologist__img {
-        width: 350px;
-    }
 }
 /* =============================================================== footer =============================================================== */
 .footer {
@@ -1245,102 +715,6 @@ body {
     padding: 40px 0;
     text-align: center;
 }
-
-@media screen and (min-width:320px) and (max-width:767px) {
-    .footer__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer__logo-wrapper {
-       display: flex;
-       justify-content: center;
-    }
-
-    .footer__navigation-list li:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    .footer__address-wrapper {
-        margin-bottom: 50px;
-    }
-
-    .footer__navigation-wrapper {
-        margin-bottom: 50px;
-    }
-
-    .footer__address, .footer__navigation {
-        text-align: center;
-    }
-
-    .fotter__address-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width:320px) {
-    .footer__address-link {
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .footer__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .footer__navigation-list li:not(:last-child) {
-        margin-bottom: 60px;
-    }
-
-    .footer__navigation-link,
-    .footer__address-link {
-        font-weight: 600;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .footer__logo-wrapper {
-        display: flex;
-        justify-content: center;
-    }
-
-    .footer__address-wrapper {
-        margin: 0;
-    }
-
-    .footer__navigation-wrapper {
-        margin-top: auto;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .footer__wrap {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .footer__address-wrapper {
-        margin-top: 0;
-        margin-left: 100px;
-    }
-
-    .footer__navigation {
-        text-align: center;
-    }
-
-    .footer__navigation-list li:not(:last-child) {
-        margin-bottom: 20px;
-    }
-}
 /* =============================================================== modal =============================================================== */
 .backdrop {
     position: fixed;
@@ -1351,7 +725,7 @@ body {
     transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
   }
   
-  .modal {
+.modal {
     position: relative;
     top: 50%;
     left: 50%;
@@ -1363,41 +737,17 @@ body {
     box-shadow: var(--accent-shadow);
     border-radius: 8px;
     transition: transform var(--time) var(--cubic);
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 374px) {
-    .modal {
-      padding: 20px;
-      height: auto;
-      width: 290px;
-    }
-  }
-
-  @media screen and (min-width: 375px) and (max-width: 425px) {
-    .modal {
-      padding: 30px;
-      height: auto;
-      width: 345px;
-    }
-  }
-
-  @media screen and (min-width: 425px) and (max-width: 1024px) {
-    .modal {
-      padding: 30px;
-      height: auto;
-      width: 395px;
-    }
-  }
-    
-  .backdrop.is-hidden {
+}
+  
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     overflow: visible;
-  
-    &.is-hidden .modal {
-      transform: translate(-50%, -50%) scale(0) ;
-    }
+}
+
+.backdrop.is-hidden.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0) ;
   }
     
   .modal-btn {
@@ -1432,3 +782,584 @@ body {
     width: 22px;
     height: 22px;
   }
+/* =============================================================== @media =============================================================== */
+/* =============================================================== (min-width:320px) =============================================================== */
+@media screen and (min-width:320px) {
+    .hero {
+        min-width: 320px;
+        background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+        rgba(34, 34, 39, 0.4)), url(../images/hero/hero-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 200px 0;
+    }
+
+    @media screen and (min-device-pixel-rato: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-mobile-2x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-mobile-3x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-mobile-4x.jpg);
+        }
+    }
+
+    .footer__address-link {
+        display: flex;
+        align-items: center;
+    }
+} 
+/* =============================================================== (min-width:320px) and (max-width:374px) =============================================================== */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .modal {
+      padding: 20px;
+      height: auto;
+      width: 290px;
+    }
+}
+/* =============================================================== (min-width:320px) and (max-width:375px) =============================================================== */
+@media screen and (min-width:320px) and (max-width:375px) {
+    .services__item {
+        width: 280px;
+    }
+
+    .services__img {
+        width: 280px;
+    }
+
+    .about__img-optica,
+    .about__founder-img {
+        width: 280px;
+    }
+
+    .ophthalmologist__img {
+        width: 280px;
+    }
+}
+/* =============================================================== (min-width:320px) and (max-width:480px) =============================================================== */
+@media screen and (min-width:320px) and (max-width:480px) {
+    .button {
+        width: auto;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 0 15px;
+    }  
+}
+/* =============================================================== (min-width:320px) and (max-width:767px) =============================================================== */
+@media screen and (min-width:320px) and (max-width:767px) {
+    .container-theems {
+        margin-left: auto;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .header__wrapper {
+        min-width: 290px;
+        display: flex;
+        align-items: center;
+    }   
+
+    .hero {
+        min-width: 320px;
+    }
+
+    .hero__title {
+        font-size: 38px;
+        margin: 25px 0;
+    }
+
+    .hero__paragraph {
+        width: 280px;    
+        margin: 0 auto;
+    }
+
+    .advantages__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .advantages__list li:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .services__item {
+        height: auto;
+    }
+
+    .about__paragraph {
+        font-size: 20px;
+        text-align: center;
+        text-align: start;
+    }
+
+    .about__items-optica,
+    .about__items-founder {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__items-founder li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .about__items-optica li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .about__img-optica,
+    .about__founder-img {
+        height: auto;
+    }
+
+    .ophthalmologist__description {
+        font-size: 20px;
+        text-align: start;
+    }
+    .ophthalmologist__paragraph {
+        flex-direction: column;
+    }
+
+    .ophthalmologist__items {
+        margin-bottom: 40px;
+    }
+
+    .ophthalmologist__img {
+        height: auto;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__logo-wrapper {
+       display: flex;
+       justify-content: center;
+    }
+
+    .footer__navigation-list li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .footer__address-wrapper {
+        margin-bottom: 50px;
+    }
+
+    .footer__navigation-wrapper {
+        margin-bottom: 50px;
+    }
+
+    .footer__address, .footer__navigation {
+        text-align: center;
+    }
+
+    .fotter__address-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* =============================================================== (min-width:375px) and (max-width:480px) =============================================================== */
+@media screen and (min-width:375px) and (max-width:480px) {
+    .services__item {
+        width: 345px;
+    }
+
+    .services__img {
+        width: 345px;
+    }
+
+    .services__item {
+        width: 345px;
+    }
+
+    .services__img {
+        width: 345px;
+    }
+
+    .about__img-optica,
+    .about__founder-img {
+        width: 345px;
+    }
+
+    .ophthalmologist__img {
+        width: 345px;
+    }
+}
+/* =============================================================== (min-width: 375px) and (max-width: 425px) =============================================================== */
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .modal {
+      padding: 30px;
+      height: auto;
+      width: 345px;
+    }
+}
+/* =============================================================== (min-width: 425px) and (max-width: 1024px) =============================================================== */
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .modal {
+      padding: 30px;
+      height: auto;
+      width: 395px;
+    }
+}
+/* =============================================================== (min-width:480px) and (max-width:767px) =============================================================== */
+@media screen and (min-width:480px) and (max-width:767px) {
+    .services__item {
+        width: 450px;
+    }
+
+    .services__img {
+        width: 450px;
+    }
+
+    .about__img-optica,
+    .about__founder-img {
+        width: 450px;
+    }
+
+    .ophthalmologist__img {
+        width: 450px;
+    }
+}
+/* =============================================================== (min-width:768px) =============================================================== */
+@media screen and (min-width:768px) {
+    .container {
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+   .header__menu {
+        margin-left: auto;
+        display: flex;
+    }
+
+    .hero__title {
+        font-size: 72px;
+        margin: 30px 0;
+    }
+
+    .hero__paragraph {
+        width: 600px;    
+        font-size: 24px;
+    }
+
+    .hero {
+        min-width: 768px;
+        background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+        rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 300px 0;
+    }
+
+    @media screen and (min-device-pixel-rato: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet-2x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet-3x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet-4x.jpg);
+        }
+    }
+
+    .about__items-optica,
+    .about__items-founder {
+        width: 704px;
+        justify-content: space-between;
+    }
+
+    .about__founder-img {
+        height: 285px;
+        object-fit: cover;
+    }
+
+    .ophthalmologist__paragraph {
+        flex-direction: row;    
+    }
+
+    .ophthalmologist__items {
+        margin-right: 40px;
+    }
+
+    .ophthalmologist__description {
+        text-align: start;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__navigation-list li:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .footer__navigation-link,
+    .footer__address-link {
+        font-weight: 600;
+    }
+}
+/* =============================================================== (max-width:767px) =============================================================== */
+@media screen and (max-width:767px) {
+    .header__menu {
+        display: none;
+    }
+}
+/* =============================================================== (min-width:768px) and (max-width:1023px) =============================================================== */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .header__menu {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__navigation {
+        margin-bottom: 20px;
+    }
+
+    .about__img-optica,
+    .about__founder-img {
+        width: 220px;
+    }
+
+    .ophthalmologist__img {
+        width: 220px;
+    }
+
+    .footer__logo-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__address-wrapper {
+        margin: 0;
+    }
+
+    .footer__navigation-wrapper {
+        margin-top: auto;
+    }
+}
+/* =============================================================== (min-width:768px) and (max-width:1024px) =============================================================== */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .ophthalmologist__items {
+       margin-bottom: auto;
+    }
+
+}
+/* =============================================================== (min-width:1024px) =============================================================== */
+@media screen and (min-width:1024px) {
+    .about__items-optica,
+    .about__items-founder {
+        width: 960px;
+        justify-content: space-between;
+    }
+
+    .footer__wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer__address-wrapper {
+        margin-top: 0;
+        margin-left: 100px;
+    }
+
+    .footer__navigation {
+        text-align: center;
+    }
+
+    .footer__navigation-list li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+/* =============================================================== (min-width:1024px) and (max-width:1200px) =============================================================== */
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    .services__list {
+        width: 960px;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .services__item {
+        margin: 0;
+        width: 300px;
+    }
+
+    .services__item:nth-child(-n+3) {
+        margin-bottom: 30px;
+    }
+
+    .services__img {
+        width: 300px;
+    }
+
+    .about__img-optica,
+    .about__founder-img {
+        width: 300px;
+    }
+
+    .ophthalmologist__img {
+        width: 360px;
+    }
+}
+/* =============================================================== (min-width:1200px) =============================================================== */
+@media screen and (min-width:1200px) {
+    .container {
+        padding: 0 32px;
+        margin: 0 auto;
+        width: 1200px;
+    }
+
+    .header__navigation {
+        margin-right: 120px;
+    }
+
+    .hero {
+        min-width: 1200px;
+        background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+        rgba(34, 34, 39, 0.4)), url(../images/hero/hero-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 500px 0;
+    }
+
+    @media screen and (min-device-pixel-rato: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-bg-2x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-bg-3x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-rato: 4),
+    (-webkit-min-device-pixel-ratio: 4),
+    screen and (min-resolution: 384dpi),
+    screen and (min-resolution: 4dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(34, 34, 39, 0.4),
+            rgba(34, 34, 39, 0.4)), url(../images/hero/hero-bg-4x.jpg);
+        }
+    }
+
+    .hero__title {
+        font-size: 92px;
+        margin: 30px 0;
+    }
+
+    .hero__paragraph {
+        margin: 0 auto;
+        width: 800px;    
+    }
+
+    .services__list {
+        width: 1136px;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .services__item {
+        margin: 0;
+        width: 350px;
+    }
+
+    .services__item:nth-child(-n+3) {
+        margin-bottom: 40px;
+    }
+
+    .services__img {
+        width: 350px;
+    }
+
+    .about__items-optica,
+    .about__items-founder {
+        width: 1136px;
+        justify-content: space-between;
+    }
+
+    .about__img-optica,
+    .about__founder-img {
+        width: auto;
+    }
+
+    .ophthalmologist__img {
+        width: 350px;
+    }
+}
+/* ===============================================================  section =============================================================== */
+.section {
+    padding-top: 96px;
+}
+/* ===============================================================  ophthalmologist =============================================================== */
+.ophthalmologist__description-last {
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
