@@ -66,11 +66,6 @@ body.dark .footer {
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-}
-
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
   font: normal 300 16px var(--primary-font), sans-serif;
   letter-spacing: 1px;
 }
@@ -112,49 +107,48 @@ body {
     box-shadow:var(--shadow-toggle);
     line-height: 1;
     transition: var(--time) var(--cubic); 
-  }
+}
 
-  .toggle:hover {
-    background-color: var(--color-white);
+.toggle:hover {
     box-shadow: var(--accent-shadow);
     transition: var(--time) var(--cubic); 
-  }
+}
 
-  .toggle > svg {
+.toggle svg {
     transition: var(--time) var(--cubic); 
-  }
+}
 
-  .toggle:hover svg {
+.toggle:hover svg {
     transition: var(--time) var(--cubic); 
     fill: var(--accent-color);
-  }
+}
   
-  .input {
+.input {
     display: none;
-  }
+}
   
-  .icon {
+.icon {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
     transition: transform var(--time);
-  }
+}
 
-  .icon--moon {
+.icon--moon {
     transition-delay: var(--time);
-  }
+}
   
-  .icon--sun {
+.icon--sun {
     transform: scale(0);
-  }
+}
   
-  #switch:checked + .icon--moon {
+#switch:checked + .icon--moon {
     transform: rotate(360deg) scale(0);
-  }
+}
   
-  #switch:checked ~ .icon--sun {
+#switch:checked ~ .icon--sun {
     transition-delay: var(--time);
     transform: scale(1) rotate(360deg);
-  }
+}
 
 .container-theems {
   margin-left: auto;
@@ -186,13 +180,10 @@ body {
 }
 
 .go-to-top:hover {
+    transform: scale(1.1);
     box-shadow: var(--accent-shadow);
     transition: var(--time) var(--cubic);
     border: solid 4px var(--accent-color);
-}
-
-.go-to-top:hover > svg {
-    fill: var(--accent-color);
 }
 /* ==================================================================  logo ================================================================== */
 .logo {
@@ -203,7 +194,6 @@ body {
     height: 130px;
     padding: 14px;
     border-radius: 50%;
-    color: var(--primary-color);
     background-color: var(--color-grey);
     transition: var(--time) var(--cubic);  
 }
@@ -212,10 +202,6 @@ body {
     transform: scale(1.1);
     transition: var(--time) var(--cubic);
     box-shadow: var(--accent-shadow);  
-}
-
-.logo > span {
-    color: var(--accent-color-dark);
 }
 /* ===============================================================  mobile-menu =============================================================== */
 .mobile-menu {
@@ -234,8 +220,8 @@ body {
 
 .mobile-menu > svg {
     display: block;
-    height: 40px;
-    width: 40px;
+    height: 33px;
+    width: 33px;
     transition: var(--time) var(--cubic);
 }
 
@@ -410,7 +396,6 @@ body {
 
 .header__navigation-list li {
     padding: 14px 0;    
-    margin-right: 40px;
     position: relative;
     transition: var(--time) var(--cubic);
 }
@@ -434,12 +419,9 @@ body {
     transition: var(--time) var(--cubic);
 }
 
-.header__navigation-item {
+.header__navigation-item a {
     font-size: 20px;
     font-weight: 800;
-}
-
-.header__navigation-item a {
     padding: 14px 0;    
     transition: var(--time) var(--cubic);
 }
@@ -448,10 +430,6 @@ body {
     transition: var(--time) var(--cubic);
     color: var(--accent-color);
 } 
-
-.header__social {
-   margin: auto 0;
-}
 
 .header__social-items {
     display: flex;
@@ -544,7 +522,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
     margin: -10px;
 }
 
@@ -580,10 +557,6 @@ body {
 .about__paragraph {
     font-size: 24px;
     text-align: center;
-}
-
-.about__paragraph-space {
-    margin-top: 40px;
 }
 
 .about__paragraph-optica,
@@ -641,7 +614,6 @@ body {
 .paragraph-space {
     margin-bottom: 10px;
 }
-
 
 .ophthalmologist__img {
     object-fit: cover;
@@ -723,7 +695,7 @@ body {
     height: 100%;
     background-color: var(--background-color-modal-window);
     transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
-  }
+}
   
 .modal {
     position: relative;
@@ -748,9 +720,9 @@ body {
 
 .backdrop.is-hidden.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0) ;
-  }
+}
     
-  .modal-btn {
+.modal-btn {
     display: flex;
     align-items: center;
     padding: 8px;
@@ -764,24 +736,24 @@ body {
     cursor: pointer;
     transition: var(--time) var(--cubic); 
     z-index: 999;
-  }
+}
 
-  .modal-btn:hover .modal-btn-svg {
+.modal-btn:hover .modal-btn-svg {
     fill: var(--accent-color);
     transition: var(--time) var(--cubic); 
-  }
+}
 
-  .modal-btn:hover {
+.modal-btn:hover {
     border: solid 2px var(--accent-color);
     box-shadow: var(--accent-shadow);
     transition: var(--time) var(--cubic); 
-  }
+}
   
-  .modal-btn-svg {
+.modal-btn-svg {
     transition: var(--time) var(--cubic); 
     width: 22px;
     height: 22px;
-  }
+}
 /* =============================================================== @media =============================================================== */
 /* =============================================================== (min-width:320px) =============================================================== */
 @media screen and (min-width:320px) {
@@ -840,20 +812,20 @@ body {
 /* =============================================================== (min-width:320px) and (max-width:375px) =============================================================== */
 @media screen and (min-width:320px) and (max-width:375px) {
     .services__item {
-        width: 280px;
+        width: 290px;
     }
 
     .services__img {
-        width: 280px;
+        width: 290px;
     }
 
     .about__img-optica,
     .about__founder-img {
-        width: 280px;
+        width: 290px;
     }
 
     .ophthalmologist__img {
-        width: 280px;
+        width: 290px;
     }
 }
 /* =============================================================== (min-width:320px) and (max-width:480px) =============================================================== */
@@ -997,14 +969,6 @@ body {
         width: 345px;
     }
 
-    .services__item {
-        width: 345px;
-    }
-
-    .services__img {
-        width: 345px;
-    }
-
     .about__img-optica,
     .about__founder-img {
         width: 345px;
@@ -1112,6 +1076,14 @@ body {
             background-image: linear-gradient(rgba(34, 34, 39, 0.4),
             rgba(34, 34, 39, 0.4)), url(../images/hero/hero-tablet-4x.jpg);
         }
+    }
+
+    .services__item {
+        width: 341px;
+    }
+
+    .services__img {
+        width: 341px;
     }
 
     .about__items-optica,
@@ -1228,6 +1200,10 @@ body {
 }
 /* =============================================================== (min-width:1024px) and (max-width:1200px) =============================================================== */
 @media screen and (min-width:1024px) and (max-width:1200px) {
+    .header__navigation-list li {
+        margin-right: 40px;
+    }
+
     .services__list {
         width: 960px;
         margin: 0;
